@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         runTimer()
     }
 
+
     override fun onSaveInstanceState(savedInstanceState: Bundle) {
         super.onSaveInstanceState(savedInstanceState)
         savedInstanceState.putInt("seconds", seconds)
