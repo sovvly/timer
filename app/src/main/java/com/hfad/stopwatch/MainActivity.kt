@@ -21,10 +21,8 @@ class MainActivity : AppCompatActivity() {
             running = savedInstanceState.getBoolean("running")
             wasRunning = savedInstanceState.getBoolean("wasRunning")
         }
-
         runTimer()
     }
-
 
     override fun onSaveInstanceState(savedInstanceState: Bundle) {
         super.onSaveInstanceState(savedInstanceState)
@@ -64,7 +62,7 @@ class MainActivity : AppCompatActivity() {
         val handler = Handler()
 
 
-        handler.post(object: Runnable {
+        handler.post(object : Runnable {
             override fun run() {
                 val hours = seconds / 3600
                 val minutes = (seconds % 3600) / 60
